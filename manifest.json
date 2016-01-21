@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Web Environment Sticker",
+  "description": "This extension help you to identify your web environment (dev, staging or prod).",
+  "version": "0.0.1",
+  
+  "author": "Jamal Lahyani <j.lahyani@gmail.com>",
+  
+  "browser_action": {
+    "default_title": "Web Environment Sticker"
+  },
+  
+  "content_scripts": [
+    {
+		"matches": ["<all_urls>"],
+        "js": ["data/jquery.min.js","data/functions.js","data/constants.js","data/rules.js","data/content-script.js"]
+    }
+  ]
+}
